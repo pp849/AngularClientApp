@@ -1,104 +1,101 @@
-##📝 Angular Task Manager Application - Pruthvi Patel
-##🌟 Project Overview
-This is a modern Angular 18 single-page application featuring:
+# 📝 Angular Task Manager Application - Pruthvi Patel
 
-Standalone components architecture
+## 🌟 Project Overview
+This is a modern **Angular 18** single-page application that demonstrates the power of the Angular framework through the following features:
 
-Client-side routing with multiple views
+- **Standalone Components Architecture**  
+- **Client-Side Routing** with multiple views  
+- **API Data Integration** for displaying news  
+- **Task Management System** with full CRUD operations  
+- **Feedback Form** with reactive forms and input validation  
+- **Responsive Design** with custom styling  
 
-API data integration for news display
+## 🚀 Live Demo
+🔗 [Live Demo of the Angular Client App](https://angular-client-app-wheat.vercel.app/home)
 
-Task management system with CRUD operations
+## 📂 Project Structure
+Here’s an overview of the project structure:
 
-Feedback form with reactive forms and validation
+```
+src/
+├── app/
+│   ├──  home/       → HomeComponent (Landing page)
+│   ├── news/        → NewsComponent (Displays fetched news)
+│   ├── form/        → FeedbackFormComponent (Reactive form with validation)
+│   ├── task/        → TaskComponent (Task management with CRUD functionality)
+│   ├── services/
+│   │   └── news.service.ts   → Fetches news data from API
+│   ├── app.config.ts    → Angular providers (router, http)
+│   ├── app.routes.ts    → Route definitions
+│   ├── app.component.ts → Root component (App component)
+│   ├── app.component.html → HTML template for the root component
+│   └── app.component.css  → Styling for the root component
+├── index.html           → Main HTML template for the app
+├── main.ts              → Application entry point
+└── styles.css           → Global styles
+```
 
-Responsive design with custom styling
 
-##🚀 Live Demo
-🔗 https://angular-client-app-wheat.vercel.app/home
+## 🧩 Key Features
 
+### 📋 Task Management
+- Add, view, and delete tasks
+- Mark tasks as completed
+- Search tasks by keyword
 
-##📂 Project Structure
-Copy
-angular-client-app/
-├── src/
-│   ├── app/
-│   │   ├── form/               # Feedback form component
-│   │   ├── home/               # Landing page component
-│   │   ├── news/               # API data display component
-│   │   ├── task/               # Task management component
-│   │   ├── app.component.*     # Root component files
-│   │   ├── app.config.ts       # Application providers
-│   │   ├── app.routes.ts       # Route definitions
-│   │   └── news.service.ts     # News API service
-│   ├── assets/                 # Static assets
-│   ├── index.html              # Main HTML template
-│   ├── main.ts                 # Application entry point
-│   └── styles.css              # Global styles
-├── angular.json                # Angular CLI configuration
-├── package.json                # Project dependencies
-└── README.md                   # This file
+### 📰 News Feed
+- Fetches data from an external API
+- Clean, card-based display for the news items
+- Manual refresh for the news feed
 
-##🧩 Key Features
+### 📝 Feedback Form
+- Fully implemented **Reactive Form**
+- Input validation with clear error messages
+- Form submission handling
 
-#📋 Task Management
-Add, view, and delete tasks
+### 🏠 Home Page
+- Application introduction and welcome message
+- Easy navigation to all features
+- Clean and responsive design
 
-Mark tasks as complete
+## 💻 Technology Stack
+| Technology        | Purpose                                              |
+|-------------------|------------------------------------------------------|
+| **Angular 18**    | Frontend framework                                   |
+| **Standalone Components** | Modern Angular architecture                  |
+| **Angular Router**| Client-side navigation                               |
+| **Reactive Forms**| Efficient form handling with validation              |
+| **HTTP Client**   | Fetching external data from APIs                     |
+| **CSS**           | Custom styling and responsive design                 |
+| **Vercel**        | Deployment platform for hosting the application      |
 
-Search functionality
+## 🛠️ Development Setup
 
-#📰 News Feed
-Fetches data from external API
+### Step 1: Clone the Repository
 
-Clean card-based display
-
-Refresh capability
-
-#📝 Feedback Form
-Reactive form implementation
-
-Input validation with error messages
-
-Form submission handling
-
-#🏠 Home Page
-Application introduction
-
-Navigation to all features
-
-Clean, responsive design
-
-#💻 Technology Stack
-Technology	Purpose
-Angular 18	Frontend framework
-Standalone Components	Modern Angular architecture
-Angular Router	Client-side navigation
-Reactive Forms	Form handling with validation
-HTTP Client	API data fetching
-CSS	Custom styling
-Vercel	Deployment platform
-
-##🛠️ Development Setup
-Clone the repository - git clone https://github.com/your-repo/angular-client-app.git
+git clone https://github.com/your-username/angular-client-app.git
+Navigate to the project directory:
 cd angular-client-app
 
-Install dependencies - npm install
+###Step 2: Install Dependencies
+Install the necessary packages and dependencies:
+npm install
 
-Run development server - ng serve
+###Step 3: Run the Development Server
+Start the Angular development server:
+ng serve
 
-Open in browser - http://localhost:4200/
+###Step 4: Open the Application
+Open your browser and go to http://localhost:4200 to view the application.
 
 ##🚀 Deployment
-The application is configured for easy deployment to Vercel:
 
-Push your code to a GitHub repository
+-This application is configured for easy deployment to Vercel:
+-Push your code to a GitHub repository.
+-Create a new project on Vercel.
+-Link your GitHub repository to Vercel.
+-Vercel will automatically detect the Angular project and deploy it.
 
-Create a new Vercel project
-
-Connect your GitHub repository
-
-Vercel will automatically detect the Angular project and deploy it
-
-📝 Author
+##📝 Author
 Pruthvi Patel
+
