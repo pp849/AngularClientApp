@@ -77,18 +77,18 @@ git clone https://github.com/your-username/angular-client-app.git
 Navigate to the project directory:
 cd angular-client-app
 
-###Step 2: Install Dependencies
+### Step 2: Install Dependencies
 Install the necessary packages and dependencies:
 npm install
 
-###Step 3: Run the Development Server
+### Step 3: Run the Development Server
 Start the Angular development server:
 ng serve
 
-###Step 4: Open the Application
+### Step 4: Open the Application
 Open your browser and go to http://localhost:4200 to view the application.
 
-##🚀 Deployment
+## 🚀 Deployment
 
 -This application is configured for easy deployment to Vercel:
 -Push your code to a GitHub repository.
@@ -96,6 +96,6 @@ Open your browser and go to http://localhost:4200 to view the application.
 -Link your GitHub repository to Vercel.
 -Vercel will automatically detect the Angular project and deploy it.
 
-##📝 Author
+## 📝 Author
 Pruthvi Patel
 
