@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <h2 class="text-center">Task List</h2>
+  
+    <!-- Input for adding new tasks -->
+    <div class="input-group mb-3">
+      <input [(ngModel)]="newTask" class="form-control" placeholder="Enter a task" />
+      <button class="btn btn-primary" (click)="addTask()">Add Task</button>
+    </div>
+  
+    <!-- Search input -->
+    <div class="mb-3">
+      <input [(ngModel)]="searchQuery" class="form-control" placeholder="Search tasks..." />
+    </div>
+  
+    <!-- Display searched tasks -->
+    <ul class="list-group">
+      <li *ngFor="let task of getSearchedTasks()" class="list-group-item d-flex justify-content-between align-items-center">
+        <span [class.text-muted]="task.completed">{{ task.task }}</span>
+        <button class="btn btn-danger btn-sm" (click)="deleteTask(task.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

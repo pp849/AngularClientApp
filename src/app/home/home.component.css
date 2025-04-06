@@ -1,0 +1,210 @@
+/* Color Variables */
+:root {
+  --primary: #4361ee;
+  --primary-light: #4895ef;
+  --secondary: #3f37c9;
+  --accent: #f72585;
+  --dark: #1b263b;
+  --light: #f8f9fa;
+  --success: #4cc9f0;
+  --warning: #f8961e;
+  --danger: #ef233c;
+}
+
+/* Hero Section - More vibrant gradient with better contrast */
+.hero-section {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  padding: 120px 20px;
+  border-radius: 0;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+/* Feature Cards - Modern card design with subtle animations */
+.feature-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(67, 97, 238, 0.1);
+  border: 1px solid rgba(67, 97, 238, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(67, 97, 238, 0.2);
+  border-color: rgba(67, 97, 238, 0.2);
+}
+
+.feature-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--success));
+  transition: height 0.3s ease;
+}
+
+.feature-card:hover::after {
+  height: 6px;
+}
+
+.feature-card i {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.feature-card h3 {
+  color: var(--dark);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Testimonial Section - More engaging design */
+.testimonial-card {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.03);
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 4rem;
+  color: rgba(67, 97, 238, 0.1);
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.testimonial-card h5 {
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #495057;
+  position: relative;
+}
+
+/* Carousel Controls - Modern circular buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -25px;
+}
+
+.carousel-control-next {
+  right: -25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-size: 60%;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--secondary);
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+}

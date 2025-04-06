@@ -1,0 +1,95 @@
+.task-container {
+  max-width: 500px; /* Increased width for the form */
+  margin: auto;
+  text-align: center;
+  padding: 20px; /* Added padding for better spacing */
+  background-color: #f9f9f9; /* Light background color for form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+}
+
+.task-input, .task-search {
+  margin-bottom: 10px;
+}
+
+.text-muted {
+  text-decoration: line-through;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-right: 5px;
+  width: 80%; /* Increased width for input and textarea */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Consistent margin for inputs */
+}
+
+textarea {
+  height: 100px; /* Set height for the message textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+  padding: 10px 20px; /* More padding for better button size */
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f4f4f4;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Feedback form validation styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.text-danger {
+  font-size: 12px;
+  color: #d9534f; /* Red color for error messages */
+}
+
+input.ng-invalid, textarea.ng-invalid {
+  border-color: #dc3545; /* Red border for invalid fields */
+}
+
+input.ng-valid, textarea.ng-valid {
+  border-color: #28a745; /* Green border for valid fields */
+}
+
+button:disabled {
+  background-color: #c6c6c6; /* Gray out button when form is invalid */
+  cursor: not-allowed;
+}
