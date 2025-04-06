@@ -1,5 +1,5 @@
-📝 Angular Task Manager Application - Pruthvi Patel
-🌟 Project Overview
+##📝 Angular Task Manager Application - Pruthvi Patel
+##🌟 Project Overview
 This is a modern Angular 18 single-page application featuring:
 
 Standalone components architecture
@@ -14,16 +14,11 @@ Feedback form with reactive forms and validation
 
 Responsive design with custom styling
 
-🚀 Live Demo
-🔗 View Live Application
+##🚀 Live Demo
+🔗 https://angular-client-app-wheat.vercel.app/home
 
-📸 Application Screenshots
-Home Page Preview
-Tasks Page Preview
-News Page Preview
-Form Page Preview
 
-📂 Project Structure
+##📂 Project Structure
 Copy
 angular-client-app/
 ├── src/
@@ -43,36 +38,38 @@ angular-client-app/
 ├── angular.json                # Angular CLI configuration
 ├── package.json                # Project dependencies
 └── README.md                   # This file
-🧩 Key Features
-📋 Task Management
+
+##🧩 Key Features
+
+#📋 Task Management
 Add, view, and delete tasks
 
 Mark tasks as complete
 
 Search functionality
 
-📰 News Feed
+#📰 News Feed
 Fetches data from external API
 
 Clean card-based display
 
 Refresh capability
 
-📝 Feedback Form
+#📝 Feedback Form
 Reactive form implementation
 
 Input validation with error messages
 
 Form submission handling
 
-🏠 Home Page
+#🏠 Home Page
 Application introduction
 
 Navigation to all features
 
 Clean, responsive design
 
-💻 Technology Stack
+#💻 Technology Stack
 Technology	Purpose
 Angular 18	Frontend framework
 Standalone Components	Modern Angular architecture
@@ -81,28 +78,18 @@ Reactive Forms	Form handling with validation
 HTTP Client	API data fetching
 CSS	Custom styling
 Vercel	Deployment platform
-🛠️ Development Setup
-Clone the repository
 
-bash
-Copy
-git clone https://github.com/your-repo/angular-client-app.git
+##🛠️ Development Setup
+Clone the repository - git clone https://github.com/your-repo/angular-client-app.git
 cd angular-client-app
-Install dependencies
 
-bash
-Copy
-npm install
-Run development server
+Install dependencies - npm install
 
-bash
-Copy
-ng serve
-Open in browser
+Run development server - ng serve
 
-Copy
-http://localhost:4200/
-🚀 Deployment
+Open in browser - http://localhost:4200/
+
+##🚀 Deployment
 The application is configured for easy deployment to Vercel:
 
 Push your code to a GitHub repository
